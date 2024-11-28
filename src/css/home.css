@@ -1,0 +1,207 @@
+body {
+  background-color: #faf7f0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font: normal 12px/1.8em sans-serif;
+}
+h1 {
+  margin: 0;
+
+
+  font: bold 50px sans-serif;
+}
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+h1 span {
+  color: #2fa0eb;
+}
+h1 small {
+  padding-left: 230px;
+  font: normal 15px sans-serif;
+}
+h2 {
+  font: bold 24px sans-serif;
+  color: #080808bd;
+  padding: 8px;
+  margin: 8px;
+}
+h3 {
+  font: bold 14px sans-serif;
+  color: #080808f7;
+  margin: 8px;
+}
+p {
+  margin: 8px;
+  padding: 0 0 8px 0;
+  font: normal 12px/1.8em sans-serif;
+}
+a {
+  color: #00487c;
+  text-decoration: underline;
+}
+a.red {
+  color: #e74c32;
+}
+
+/* Header stuff */
+
+header {
+    background-color: #22292d; 
+  height: 100%;
+}
+
+div.header-content {
+  margin: 0 20%;
+}
+nav ul,
+footer ul {
+  list-style: none;
+  display: flex;
+  padding: 20px 0;
+}
+nav ul li,
+footer ul li {
+  margin-right: 12px;
+  color: #ffffff;
+}
+
+nav ul li a {
+  color: rgb(211, 237, 238);
+  display: block;
+  padding: 6px 12px;
+  background-color: #2fa0eb;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li.current a {
+  background-color: #043b60;
+}
+
+/* main stuff */
+main {
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 630px;
+}
+.articles article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2%;
+  margin: 2% 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.articles article:hover {
+  box-shadow: 4px 2px 10px rgba(118, 110, 3, 0.37);
+  border-radius: 2%;
+}
+div.about {
+  width: 80%;
+}
+.articles article p {
+  width: 287px;
+  text-align: justify;
+  margin: 8px auto;
+}
+section.bottom {
+  display: flex;
+  padding: 0 15%;
+  background: #22292d;
+}
+
+section.bottom div {
+  width: 35%;
+  margin: 2% 2% 2% 0;
+}
+
+section.bottom img {
+  margin-right: 2%;
+  width: 25%;
+}
+
+section.bottom a {
+  color: #126dad;
+}
+
+section.bottom h2,
+section.bottom p {
+  color: gainsboro;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2fa0eb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #043b60;
+}
+
+/* footer stuff */
+footer {
+  display: flex;
+  padding: 0 15%;
+  background-color: #171b1e;
+  color: #ccc;
+  justify-content: space-between;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer li.current {
+  text-decoration: underline;
+}
